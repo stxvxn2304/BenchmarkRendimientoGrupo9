@@ -17,7 +17,7 @@ public class BenchmarkController {
         long acumulador = 0;
         for (int i = 0; i < n; i++) {
             for (int j = 0; j < n; j++) {
-                acumulador += (i + j) % 3;
+                acumulador += (i + j) % 2;
             }
         }
 
@@ -40,7 +40,7 @@ public class BenchmarkController {
         long acumulador = 0;
         for (int a = 0; a < 3; a++) {
             for (int b = 0; b < 3; b++) {
-                acumulador += c[a] * c[b] * ((a + b) % 3);
+                acumulador += c[a] * c[b] * ((a + b) % 2);
             }
         }
 
